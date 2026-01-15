@@ -17,7 +17,7 @@ package com.indra.minsait.dvsmart.files.domain.exception;
  * Exception thrown when PDF preview generation fails.
  */
 /**
- * @author Hector Huaranga <hhuaranga@indracompany.com>
+ * @author Hector Huaranga <hahuaranga@indracompany.com>
  * @class PreviewGenerationException
  * @date 14-01-2026
  */

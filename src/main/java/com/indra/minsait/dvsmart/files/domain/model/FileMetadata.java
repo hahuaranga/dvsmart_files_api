@@ -28,7 +28,7 @@ import java.time.Instant;
  * </p>
  */
 /**
- * @author Hector Huaranga <hhuaranga@indracompany.com>
+ * @author Hector Huaranga <hahuaranga@indracompany.com>
  * @class FileMetadata
  * @date 14-01-2026
  */

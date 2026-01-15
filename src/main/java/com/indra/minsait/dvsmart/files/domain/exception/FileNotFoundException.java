@@ -17,7 +17,7 @@ package com.indra.minsait.dvsmart.files.domain.exception;
  * Exception thrown when a file is not found in the catalog.
  */
 /**
- * @author Hector Huaranga <hhuaranga@indracompany.com>
+ * @author Hector Huaranga <hahuaranga@indracompany.com>
  * @class FileNotFoundException
  * @date 14-01-2026
  */

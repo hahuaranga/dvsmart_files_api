@@ -27,7 +27,7 @@ import java.util.List;
  * OpenAPI / Swagger configuration.
  */
 /**
- * @author Hector Huaranga <hhuaranga@indracompany.com>
+ * @author Hector Huaranga <hahuaranga@indracompany.com>
  * @class OpenApiConfiguration
  * @date 14-01-2026
  */

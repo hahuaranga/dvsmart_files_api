@@ -20,7 +20,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * Configuration properties for SFTP destination server connection.
  */
 /**
- * @author Hector Huaranga <hhuaranga@indracompany.com>
+ * @author Hector Huaranga <hahuaranga@indracompany.com>
  * @class SftpConfigProperties
  * @date 14-01-2026
  */

@@ -41,7 +41,7 @@ import java.util.Optional;
  * MongoDB adapter implementing FileMetadataPort.
  */
 /**
- * @author Hector Huaranga <hhuaranga@indracompany.com>
+ * @author Hector Huaranga <hahuaranga@indracompany.com>
  * @class FileMetadataMongoAdapter
  * @date 14-01-2026
  */

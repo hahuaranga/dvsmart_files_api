@@ -23,7 +23,7 @@ import org.springframework.stereotype.Component;
  * Mapper from request DTO to domain search criteria.
  */
 /**
- * @author Hector Huaranga <hhuaranga@indracompany.com>
+ * @author Hector Huaranga <hahuaranga@indracompany.com>
  * @class SearchCriteriaMapper
  * @date 14-01-2026
  */

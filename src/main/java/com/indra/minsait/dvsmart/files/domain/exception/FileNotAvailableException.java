@@ -20,7 +20,7 @@ package com.indra.minsait.dvsmart.files.domain.exception;
  * </p>
  */
 /**
- * @author Hector Huaranga <hhuaranga@indracompany.com>
+ * @author Hector Huaranga <hahuaranga@indracompany.com>
  * @class FileNotAvailableException
  * @date 14-01-2026
  */

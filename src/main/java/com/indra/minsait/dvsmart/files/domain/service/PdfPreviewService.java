@@ -42,7 +42,7 @@ import java.io.IOException;
  * </p>
  */
 /**
- * @author Hector Huaranga <hhuaranga@indracompany.com>
+ * @author Hector Huaranga <hahuaranga@indracompany.com>
  * @class PdfPreviewService
  * @date 14-01-2026
  */

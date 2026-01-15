@@ -23,7 +23,7 @@ import java.util.Optional;
  * Spring Data MongoDB repository for file index documents.
  */
 /**
- * @author Hector Huaranga <hhuaranga@indracompany.com>
+ * @author Hector Huaranga <hahuaranga@indracompany.com>
  * @class FileIndexMongoRepository
  * @date 14-01-2026
  */

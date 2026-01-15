@@ -19,7 +19,7 @@ import com.indra.minsait.dvsmart.files.domain.model.FileMetadata;
  * Input port for getting file metadata.
  */
 /**
- * @author Hector Huaranga <hhuaranga@indracompany.com>
+ * @author Hector Huaranga <hahuaranga@indracompany.com>
  * @class GetFileUseCase
  * @date 14-01-2026
  */

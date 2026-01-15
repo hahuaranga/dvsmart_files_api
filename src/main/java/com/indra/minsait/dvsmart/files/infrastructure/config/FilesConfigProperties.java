@@ -20,7 +20,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * Configuration properties for file operations.
  */
 /**
- * @author Hector Huaranga <hhuaranga@indracompany.com>
+ * @author Hector Huaranga <hahuaranga@indracompany.com>
  * @class FilesConfigProperties
  * @date 14-01-2026
  */

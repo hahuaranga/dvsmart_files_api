@@ -34,7 +34,7 @@ import java.io.OutputStream;
  * </p>
  */
 /**
- * @author Hector Huaranga <hhuaranga@indracompany.com>
+ * @author Hector Huaranga <hahuaranga@indracompany.com>
  * @class SftpFileContentAdapter
  * @date 14-01-2026
  */

@@ -25,7 +25,7 @@ import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
  * </p>
  */
 /**
- * @author Hector Huaranga <hhuaranga@indracompany.com>
+ * @author Hector Huaranga <hahuaranga@indracompany.com>
  * @class ServiceApplication
  * @date 14-01-2026
  */

@@ -17,7 +17,7 @@ package com.indra.minsait.dvsmart.files.domain.exception;
  * Exception thrown when SFTP connection or operation fails.
  */
 /**
- * @author Hector Huaranga <hhuaranga@indracompany.com>
+ * @author Hector Huaranga <hahuaranga@indracompany.com>
  * @class SftpConnectionException
  * @date 14-01-2026
  */

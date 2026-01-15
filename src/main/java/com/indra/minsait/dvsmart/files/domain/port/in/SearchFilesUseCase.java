@@ -21,7 +21,7 @@ import com.indra.minsait.dvsmart.files.domain.model.SearchCriteria;
  * Input port for searching files.
  */
 /**
- * @author Hector Huaranga <hhuaranga@indracompany.com>
+ * @author Hector Huaranga <hahuaranga@indracompany.com>
  * @class SearchFilesUseCase
  * @date 14-01-2026
  */

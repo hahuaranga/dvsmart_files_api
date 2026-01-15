@@ -21,7 +21,7 @@ import java.io.OutputStream;
  * Input port for downloading files.
  */
 /**
- * @author Hector Huaranga <hhuaranga@indracompany.com>
+ * @author Hector Huaranga <hahuaranga@indracompany.com>
  * @class DownloadFileUseCase
  * @date 14-01-2026
  */

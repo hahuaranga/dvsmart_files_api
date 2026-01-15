@@ -33,7 +33,7 @@ import java.util.List;
  * Global exception handler for REST controllers.
  */
 /**
- * @author Hector Huaranga <hhuaranga@indracompany.com>
+ * @author Hector Huaranga <hahuaranga@indracompany.com>
  * @class GlobalExceptionHandler
  * @date 14-01-2026
  */

@@ -24,7 +24,7 @@ import java.util.Map;
  * Domain model representing file statistics.
  */
 /**
- * @author Hector Huaranga <hhuaranga@indracompany.com>
+ * @author Hector Huaranga <hahuaranga@indracompany.com>
  * @class FileStatistics
  * @date 14-01-2026
  */

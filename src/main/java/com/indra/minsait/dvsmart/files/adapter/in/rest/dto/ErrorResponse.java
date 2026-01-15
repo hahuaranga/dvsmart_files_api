@@ -26,7 +26,7 @@ import java.util.List;
  * Standard error response DTO.
  */
 /**
- * @author Hector Huaranga <hhuaranga@indracompany.com>
+ * @author Hector Huaranga <hahuaranga@indracompany.com>
  * @class ErrorResponse
  * @date 14-01-2026
  */

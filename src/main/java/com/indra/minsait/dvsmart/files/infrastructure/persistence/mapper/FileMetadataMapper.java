@@ -21,7 +21,7 @@ import org.springframework.stereotype.Component;
  * Mapper between MongoDB document and domain model.
  */
 /**
- * @author Hector Huaranga <hhuaranga@indracompany.com>
+ * @author Hector Huaranga <hahuaranga@indracompany.com>
  * @class FileMetadataMapper
  * @date 14-01-2026
  */

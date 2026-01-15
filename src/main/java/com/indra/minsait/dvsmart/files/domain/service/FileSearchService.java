@@ -30,7 +30,7 @@ import org.springframework.stereotype.Service;
  * Domain service for file search operations.
  */
 /**
- * @author Hector Huaranga <hhuaranga@indracompany.com>
+ * @author Hector Huaranga <hahuaranga@indracompany.com>
  * @class FileSearchService
  * @date 14-01-2026
  */

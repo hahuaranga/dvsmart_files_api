@@ -17,7 +17,7 @@ package com.indra.minsait.dvsmart.files.domain.port.in;
  * Input port for generating file previews.
  */
 /**
- * @author Hector Huaranga <hhuaranga@indracompany.com>
+ * @author Hector Huaranga <hahuaranga@indracompany.com>
  * @class PreviewFileUseCase
  * @date 14-01-2026
  */

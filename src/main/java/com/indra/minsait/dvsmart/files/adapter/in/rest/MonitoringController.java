@@ -30,7 +30,7 @@ import java.util.Map;
  * REST Controller for monitoring endpoints.
  */
 /**
- * @author Hector Huaranga <hhuaranga@indracompany.com>
+ * @author Hector Huaranga <hahuaranga@indracompany.com>
  * @class MonitoringController
  * @date 14-01-2026
  */

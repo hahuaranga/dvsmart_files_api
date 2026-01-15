@@ -25,7 +25,7 @@ import java.util.List;
  * Response DTO for file search results (summary version for lists).
  */
 /**
- * @author Hector Huaranga <hhuaranga@indracompany.com>
+ * @author Hector Huaranga <hahuaranga@indracompany.com>
  * @class FileSearchResultItem
  * @date 14-01-2026
  */

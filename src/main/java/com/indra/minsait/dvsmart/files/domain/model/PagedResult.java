@@ -26,7 +26,7 @@ import java.util.List;
  * @param <T> type of content elements
  */
 /**
- * @author Hector Huaranga <hhuaranga@indracompany.com>
+ * @author Hector Huaranga <hahuaranga@indracompany.com>
  * @class PagedResult
  * @date 14-01-2026
  * * @param <T>

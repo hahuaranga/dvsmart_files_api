@@ -23,7 +23,7 @@ import org.springframework.context.annotation.Configuration;
  * Configuration for SFTP connection pool.
  */
 /**
- * @author Hector Huaranga <hhuaranga@indracompany.com>
+ * @author Hector Huaranga <hahuaranga@indracompany.com>
  * @class SftpConfiguration
  * @date 14-01-2026
  */

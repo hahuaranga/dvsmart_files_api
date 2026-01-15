@@ -25,7 +25,7 @@ import java.util.Map;
  * Response DTO for file statistics.
  */
 /**
- * @author Hector Huaranga <hhuaranga@indracompany.com>
+ * @author Hector Huaranga <hahuaranga@indracompany.com>
  * @class FileStatisticsResponse
  * @date 14-01-2026
  */

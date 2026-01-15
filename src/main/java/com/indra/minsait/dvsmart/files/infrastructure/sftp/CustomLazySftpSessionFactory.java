@@ -38,7 +38,7 @@ import java.time.Duration;
  * </p>
  */
 /**
- * @author Hector Huaranga <hhuaranga@indracompany.com>
+ * @author Hector Huaranga <hahuaranga@indracompany.com>
  * @class CustomLazySftpSessionFactory
  * @date 14-01-2026
  */

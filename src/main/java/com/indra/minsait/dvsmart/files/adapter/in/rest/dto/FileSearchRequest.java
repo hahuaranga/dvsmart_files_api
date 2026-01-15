@@ -25,7 +25,7 @@ import lombok.NoArgsConstructor;
  * Request DTO for file search operations.
  */
 /**
- * @author Hector Huaranga <hhuaranga@indracompany.com>
+ * @author Hector Huaranga <hahuaranga@indracompany.com>
  * @class FileSearchRequest
  * @date 14-01-2026
  */

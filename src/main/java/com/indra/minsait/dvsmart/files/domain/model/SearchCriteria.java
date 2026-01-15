@@ -22,7 +22,7 @@ import lombok.NoArgsConstructor;
  * Domain model representing search criteria for file queries.
  */
 /**
- * @author Hector Huaranga <hhuaranga@indracompany.com>
+ * @author Hector Huaranga <hahuaranga@indracompany.com>
  * @class SearchCriteria
  * @date 14-01-2026
  */

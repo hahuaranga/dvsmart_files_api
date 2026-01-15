@@ -19,7 +19,7 @@ import com.indra.minsait.dvsmart.files.domain.model.FileStatistics;
  * Input port for getting file statistics.
  */
 /**
- * @author Hector Huaranga <hhuaranga@indracompany.com>
+ * @author Hector Huaranga <hahuaranga@indracompany.com>
  * @class GetStatisticsUseCase
  * @date 14-01-2026
  */
