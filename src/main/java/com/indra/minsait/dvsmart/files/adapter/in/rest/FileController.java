@@ -21,13 +21,13 @@ import com.indra.minsait.dvsmart.files.domain.model.PagedResult;
 import com.indra.minsait.dvsmart.files.domain.model.SearchCriteria;
 import com.indra.minsait.dvsmart.files.domain.port.in.*;
 import com.indra.minsait.dvsmart.files.infrastructure.config.FilesConfigProperties;
-import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
-import io.swagger.v3.oas.annotations.media.Content;
-import io.swagger.v3.oas.annotations.media.Schema;
-import io.swagger.v3.oas.annotations.responses.ApiResponse;
-import io.swagger.v3.oas.annotations.responses.ApiResponses;
-import io.swagger.v3.oas.annotations.tags.Tag;
+//import io.swagger.v3.oas.annotations.Operation;
+//import io.swagger.v3.oas.annotations.Parameter;
+//import io.swagger.v3.oas.annotations.media.Content;
+//import io.swagger.v3.oas.annotations.media.Schema;
+//import io.swagger.v3.oas.annotations.responses.ApiResponse;
+//import io.swagger.v3.oas.annotations.responses.ApiResponses;
+//import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
@@ -56,7 +56,7 @@ import java.io.IOException;
 @RequestMapping("/api/files")
 @RequiredArgsConstructor
 @Validated
-@Tag(name = "Files", description = "PDF file search, view, and download operations")
+//@Tag(name = "Files", description = "PDF file search, view, and download operations")
 public class FileController {
 
     private static final String CONTENT_TYPE_PDF = "application/pdf";
@@ -73,13 +73,13 @@ public class FileController {
     // ==================== SEARCH ====================
 
     @GetMapping("/search")
-    @Operation(summary = "Search PDF files", 
-               description = "Search files by name, document type, client, year, and month")
-    @ApiResponses({
-        @ApiResponse(responseCode = "200", description = "Search results"),
-        @ApiResponse(responseCode = "400", description = "Invalid parameters",
-                     content = @Content(schema = @Schema(implementation = ErrorResponse.class)))
-    })
+//    @Operation(summary = "Search PDF files", 
+//               description = "Search files by name, document type, client, year, and month")
+//    @ApiResponses({
+//        @ApiResponse(responseCode = "200", description = "Search results"),
+//        @ApiResponse(responseCode = "400", description = "Invalid parameters",
+//                     content = @Content(schema = @Schema(implementation = ErrorResponse.class)))
+//    })
     public ResponseEntity<PagedSearchResponse> searchFiles(@Valid FileSearchRequest request) {
         log.info("Search request: q={}, tipoDocumento={}, page={}, size={}",
                 request.getQ(), request.getTipoDocumento(), request.getPage(), request.getSize());
@@ -93,16 +93,16 @@ public class FileController {
     // ==================== GET METADATA ====================
 
     @GetMapping("/{idUnico}")
-    @Operation(summary = "Get file metadata", description = "Retrieves complete metadata for a file")
-    @ApiResponses({
-        @ApiResponse(responseCode = "200", description = "File metadata"),
-        @ApiResponse(responseCode = "404", description = "File not found",
-                     content = @Content(schema = @Schema(implementation = ErrorResponse.class)))
-    })
+//    @Operation(summary = "Get file metadata", description = "Retrieves complete metadata for a file")
+//    @ApiResponses({
+//        @ApiResponse(responseCode = "200", description = "File metadata"),
+//        @ApiResponse(responseCode = "404", description = "File not found",
+//                     content = @Content(schema = @Schema(implementation = ErrorResponse.class)))
+//    })
     public ResponseEntity<FileResponse> getFile(
             @PathVariable 
             @Pattern(regexp = ID_UNICO_PATTERN, message = "Invalid idUnico format")
-            @Parameter(description = "Unique file identifier (SHA-256 hash)")
+            //@Parameter(description = "Unique file identifier (SHA-256 hash)")
             String idUnico) {
 
         log.info("Get file metadata: {}", idUnico);
@@ -114,14 +114,14 @@ public class FileController {
     // ==================== DOWNLOAD ====================
 
     @GetMapping("/{idUnico}/download")
-    @Operation(summary = "Download PDF file", 
-               description = "Downloads the PDF file as attachment")
-    @ApiResponses({
-        @ApiResponse(responseCode = "200", description = "PDF file stream",
-                     content = @Content(mediaType = "application/pdf")),
-        @ApiResponse(responseCode = "404", description = "File not found"),
-        @ApiResponse(responseCode = "409", description = "File not available (reorganization pending)")
-    })
+//    @Operation(summary = "Download PDF file", 
+//               description = "Downloads the PDF file as attachment")
+//    @ApiResponses({
+//        @ApiResponse(responseCode = "200", description = "PDF file stream",
+//                     content = @Content(mediaType = "application/pdf")),
+//        @ApiResponse(responseCode = "404", description = "File not found"),
+//        @ApiResponse(responseCode = "409", description = "File not available (reorganization pending)")
+//    })
     public void downloadFile(
             @PathVariable
             @Pattern(regexp = ID_UNICO_PATTERN, message = "Invalid idUnico format")
@@ -151,14 +151,14 @@ public class FileController {
     // ==================== VIEW (INLINE) ====================
 
     @GetMapping("/{idUnico}/view")
-    @Operation(summary = "View PDF in browser", 
-               description = "Opens the PDF file inline in the browser")
-    @ApiResponses({
-        @ApiResponse(responseCode = "200", description = "PDF file stream for viewing",
-                     content = @Content(mediaType = "application/pdf")),
-        @ApiResponse(responseCode = "404", description = "File not found"),
-        @ApiResponse(responseCode = "409", description = "File not available")
-    })
+//    @Operation(summary = "View PDF in browser", 
+//               description = "Opens the PDF file inline in the browser")
+//    @ApiResponses({
+//        @ApiResponse(responseCode = "200", description = "PDF file stream for viewing",
+//                     content = @Content(mediaType = "application/pdf")),
+//        @ApiResponse(responseCode = "404", description = "File not found"),
+//        @ApiResponse(responseCode = "409", description = "File not available")
+//    })
     public void viewFile(
             @PathVariable
             @Pattern(regexp = ID_UNICO_PATTERN, message = "Invalid idUnico format")
@@ -185,14 +185,14 @@ public class FileController {
     // ==================== PREVIEW ====================
 
     @GetMapping("/{idUnico}/preview")
-    @Operation(summary = "Preview PDF page as image", 
-               description = "Renders a PDF page as PNG/JPEG image")
-    @ApiResponses({
-        @ApiResponse(responseCode = "200", description = "Preview image",
-                     content = @Content(mediaType = "image/png")),
-        @ApiResponse(responseCode = "404", description = "File not found"),
-        @ApiResponse(responseCode = "500", description = "Preview generation failed")
-    })
+//    @Operation(summary = "Preview PDF page as image", 
+//               description = "Renders a PDF page as PNG/JPEG image")
+//    @ApiResponses({
+//        @ApiResponse(responseCode = "200", description = "Preview image",
+//                     content = @Content(mediaType = "image/png")),
+//        @ApiResponse(responseCode = "404", description = "File not found"),
+//        @ApiResponse(responseCode = "500", description = "Preview generation failed")
+//    })
     public ResponseEntity<byte[]> previewFile(
             @PathVariable
             @Pattern(regexp = ID_UNICO_PATTERN, message = "Invalid idUnico format")
@@ -224,9 +224,9 @@ public class FileController {
     // ==================== STATISTICS ====================
 
     @GetMapping("/stats")
-    @Operation(summary = "Get file statistics", 
-               description = "Returns aggregated statistics about indexed files")
-    @ApiResponse(responseCode = "200", description = "File statistics")
+//    @Operation(summary = "Get file statistics", 
+//               description = "Returns aggregated statistics about indexed files")
+//    @ApiResponse(responseCode = "200", description = "File statistics")
     public ResponseEntity<FileStatisticsResponse> getStatistics() {
         log.info("Statistics request");
         return ResponseEntity.ok(FileStatisticsResponse.fromDomain(getStatisticsUseCase.execute()));
