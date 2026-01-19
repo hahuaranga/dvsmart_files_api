@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  Copyright (c) 2025 Indra Soluciones Tecnologías de la Información, S.L.U.
-  All rights reserved.
--->
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -19,9 +15,13 @@
     <artifactId>dvsmart_files_api</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
-
     <name>DVSmart Files API</name>
     <description>REST API for searching, viewing and downloading PDF files from SFTP destination server</description>
+
+	<organization>
+		<name>Indra Sistemas, S.A.</name>
+		<url>http://www.indracompany.com</url>
+	</organization>
 
     <properties>
         <java.version>21</java.version>
@@ -163,51 +163,57 @@
 
 			<!-- CopyRight Plugin -->
 			<plugin>
-				<groupId>com.mycila</groupId>
-				<artifactId>license-maven-plugin</artifactId>
-				<version>${license.maven.plugin.version}</version>
-				<configuration>
-					<!-- Ruta del banner -->
-					<header>src/main/resources/license-header.txt</header>
-
-					<!-- Aplicar solo a archivos donde corresponde -->
-					<includes>
-						<include>**/*.java</include>
-					</includes>
-
-					<!-- Evitar modificar código generado o configuraciones -->
-					<excludes>
-						<exclude>**/target/**</exclude>
-						<exclude>**/generated/**</exclude>
-					</excludes>
-
-					<!-- Variables dinámicas -->
-					<properties>
-						<year>${maven.build.timestamp}</year>
-					</properties>
-
-					<!-- Etiquetas conocidas para insertar correctamente el
-					header -->
-					<mapping>
-						<java>SLASHSTAR_STYLE</java>
-					</mapping>
-
-					<!-- Configuraciones adicionales importantes -->
-					<strictCheck>true</strictCheck>
-					<useDefaultExcludes>true</useDefaultExcludes>
-				</configuration>
-
-				<executions>
-					<!-- Ejecuta el format en la fase process-sources (antes de
-					compile) -->
-					<execution>
-						<id>apply-license-headers</id>
-						<phase>process-sources</phase>
-						<goals>
-							<goal>format</goal>
-						</goals>
-					</execution>
-				</executions>
+			    <groupId>com.mycila</groupId>
+			    <artifactId>license-maven-plugin</artifactId>
+			    <version>${license.maven.plugin.version}</version>
+			
+			    <configuration>
+			
+			        <licenseSets>
+			            <licenseSet>
+			
+			                <!-- Ruta del banner -->
+			                <header>src/main/resources/license-header.txt</header>
+			
+			                <!-- Aplicar solo a archivos donde corresponde -->
+			                <includes>
+			                    <include>**/*.java</include>
+			                </includes>
+			
+			                <!-- Evitar modificar código generado o configuraciones -->
+			                <excludes>
+			                    <exclude>**/target/**</exclude>
+			                    <exclude>**/generated/**</exclude>
+			                </excludes>
+			
+			            </licenseSet>
+			        </licenseSets>
+			
+			        <!-- Variables dinámicas -->
+			        <properties>
+			            <year>${maven.build.timestamp}</year>
+			        </properties>
+			
+			        <!-- Etiquetas conocidas para insertar correctamente el header -->
+			        <mapping>
+			            <java>SLASHSTAR_STYLE</java>
+			        </mapping>
+			
+			        <!-- Configuraciones adicionales importantes -->
+			        <strictCheck>true</strictCheck>
+			        <useDefaultExcludes>true</useDefaultExcludes>
+			
+			    </configuration>
+			
+			    <executions>
+			        <execution>
+			            <id>apply-license-headers</id>
+			            <phase>process-sources</phase>
+			            <goals>
+			                <goal>format</goal>
+			            </goals>
+			        </execution>
+			    </executions>
 			</plugin>
 
 			<!-- Maven Surefire Plugin (para tests) -->
