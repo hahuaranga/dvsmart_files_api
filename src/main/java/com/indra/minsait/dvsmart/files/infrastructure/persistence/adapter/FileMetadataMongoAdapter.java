@@ -89,7 +89,8 @@ public class FileMetadataMongoAdapter implements FileMetadataPort {
         return PagedResult.of(content, criteria.getPage(), criteria.getSize(), total);
     }
 
-    @Override
+    @SuppressWarnings({ "rawtypes", "unchecked" })
+	@Override
     public FileStatistics getStatistics() {
         log.debug("Getting file statistics");
 
@@ -199,7 +200,8 @@ public class FileMetadataMongoAdapter implements FileMetadataPort {
     /**
      * Aggregates count by a string field.
      */
-    private Map<String, Long> aggregateByField(String fieldName) {
+    @SuppressWarnings("rawtypes")
+	private Map<String, Long> aggregateByField(String fieldName) {
         Aggregation agg = Aggregation.newAggregation(
                 Aggregation.match(Criteria.where(fieldName).ne(null)),
                 Aggregation.group("$" + fieldName).count().as("count")
@@ -221,7 +223,8 @@ public class FileMetadataMongoAdapter implements FileMetadataPort {
     /**
      * Aggregates count by an integer field.
      */
-    private Map<Integer, Long> aggregateByIntField(String fieldName) {
+    @SuppressWarnings("rawtypes")
+	private Map<Integer, Long> aggregateByIntField(String fieldName) {
         Aggregation agg = Aggregation.newAggregation(
                 Aggregation.match(Criteria.where(fieldName).ne(null)),
                 Aggregation.group("$" + fieldName).count().as("count")

@@ -38,14 +38,11 @@ import java.util.Map;
 @RestController
 @RequestMapping("/api/monitoring")
 @RequiredArgsConstructor
-//@Tag(name = "Monitoring", description = "System monitoring endpoints")
 public class MonitoringController {
 
     private final CustomLazySftpSessionFactory sftpSessionFactory;
 
     @GetMapping("/sftp-pool")
-//    @Operation(summary = "Get SFTP pool statistics", 
-//               description = "Returns current state of the SFTP connection pool")
     public ResponseEntity<Map<String, Object>> getSftpPoolStats() {
         CustomLazySftpSessionFactory.PoolStats stats = sftpSessionFactory.getPoolStats();
 
@@ -64,8 +61,6 @@ public class MonitoringController {
     }
 
     @GetMapping("/sftp-pool/health")
-//    @Operation(summary = "Get SFTP pool health status", 
-//               description = "Returns health status based on pool utilization")
     public ResponseEntity<Map<String, Object>> getSftpPoolHealth() {
         CustomLazySftpSessionFactory.PoolStats stats = sftpSessionFactory.getPoolStats();
 
